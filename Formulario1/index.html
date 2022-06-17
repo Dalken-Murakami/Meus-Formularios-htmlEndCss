@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/formulario.css" media="">
     <title>Cadastro</title>
 </head>
 <body>
@@ -18,46 +19,47 @@
 
     <form action="">
         <fieldset class="grupo">
-            <div>
-                <label for="nome">
-                    <strong>Nome</strong>
-                    <input type="text" nome="nome" id="nome" required="">
+            <div class="campo">
+                <label class="" for="nome">
+                    <strong>Nome :</strong><br>
                 </label>
+                <input type="text" nome="nome" id="nome" required="">
+                
             </div>
             <div class="campo">
                 <label for="sobrenome">
-                    <strong>Sobrenome</strong>
+                    <strong>Sobrenome:</strong>
                 </label>
-                <input type="text" nome="sobrenome" id="sobrenome"  required>
+                <input type="text" nome="sobrenome" id="sobrenome"  required="">
             </div>
         </fieldset>
         <div class="campo">
             <label for="email">
-                <strong> Email </strong>
+                <strong> Email: </strong>
                 </label>
-            <input type="email" nome="email" id="email"  required>
+            <input type="email" nome="email" id="email"  required="">
         </div>
         <div>
             <label for="">
-                <strong>Qual lado da aplicação, você desenvolve?</strong>
+                <strong>Qual lado da aplicação, você desenvolve?</strong><br>
             </label>
             <label for="">
-                <input type="radio" nom="deveweb"
+                <input type="radio" nome="deveweb"
                 value="frontend" checked>
-                <strong>Frontend</strong>
+                <strong>Frontend</strong><br>
             </label>
             <label for="">
                 <input type="radio" name="devweb" id="backend" >
-                <strong>Backend</strong>
+                <strong>Backend</strong><br>
             </label>
             <label for="">
                 <input type="radio" name="devweb" id="fullstak">
-                <strong>FullStak</strong>
+                <strong>FullStak</strong><br>
             </label>
         </div>
         <div>
             <label for="senioridade" >
-            <strong> SeniorIdade</strong>
+            <strong> SeniorIdade</strong><br>
             </label>
             <select name="" id="Senior Idade">
                 <option selected disabled value="">Selecione:</option>
@@ -67,16 +69,15 @@
             </select>
         </div>
         <fieldset class="grupo">
-            <div>
+            <div id="check">
                 <label for="">
-                    <strong>Selecione as tecnologias que você utiliza:</strong>
+                    <strong>Selecione as tecnologias que você utiliza:</strong><br>
                 </label><br>
                 <input type="checkbox" id="tecnologia1" nome="tecnologia1" value="html">
                 <label for="tecnologia1">
                     <strong>  HTML</strong>
                 </label>
-
-                <input type="checkbox" id="tecnologia2" nome="tecnologia2" value="CSS">
+                                <input type="checkbox" id="tecnologia2" nome="tecnologia2" value="CSS">
                 <label for="tecnologia2">
                     <strong> CSS</strong>
                 </label>
@@ -104,7 +105,7 @@
         </fieldset>
         <div>
             <br>
-            <label for=""><strong>conte um pouco da sua experiência</strong></label>
+            <label for=""><strong>Conte um pouco da sua experiência:</strong><br></label>
             <textarea rows="6" style="width:26em;" id="experiencia"name="experiencia"></textarea>
         </div>
         <button class="botao" type="submit">
